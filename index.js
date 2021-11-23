@@ -66,7 +66,7 @@ function createDisplay() {
             }
             if(counter == 2 && currentCards[0].src == currentCards[2].src) {
                 totalScore = totalScore + 10;
-                score.innerHTML = `SCORE ${totalScore}`
+                score.innerHTML = `SCORE : ${totalScore}`
                 counter = 0
                 currentCards.pop()
                 currentCards.pop()
@@ -75,7 +75,7 @@ function createDisplay() {
             }
             if(counter == 2 && currentCards[0].src != currentCards[2].src) {
                 totalScore = totalScore - 5
-                score.innerHTML = `SCORE ${totalScore}`
+                score.innerHTML = `SCORE : ${totalScore}`
                 setTimeout(function() {
                     counter = 0
                     currentCards[0].classList.add('hidden')
