@@ -5,10 +5,16 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: #18295f
+}
+.score {
+    color: white;
+    font-weight: bold;
+    
 }
 .container {
     position: absolute;
@@ -18,22 +24,26 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 420px;
     height: 90vh;
     margin: auto;
-    background-color: white;
+    background-color: #ffcc00;
+    border: 5px solid #3264b0;
+    border-radius: 10px;
 }
 .container img {
     width: 120px;
     height: 120px;
-    border: 5px solid black;
+    border: 5px solid #3264b0;
+    background-color: #ffcc00;
     border-radius: 10px;
 }
-.pokeball-bkimg {
-    background-image: url('/images/pokeball.png');
-    background-size: 120px 120px;
 
-}
-.hide {
+.hidden {
     display: none;
+}
+
+
+.card-back:hover {
+    transform: scale(1.1);
 }
